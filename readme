@@ -1,0 +1,8 @@
+Hello! Welcome to the github repository for WP3.
+
+This is a collection of all the code written for the work package. DragCalc is where the bulk of the calculations relating to torque and momentum in flight have been performed, 
+as well as where the graph of torque output as a function of altitude was made. 
+
+MMOI \todo andres or diogo describe the MMOI .py file
+
+Finally, phaseplot is where the plot for mission phases was made. 
