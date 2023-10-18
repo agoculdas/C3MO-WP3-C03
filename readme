@@ -1,8 +1,14 @@
 Hello! Welcome to the github repository for WP3.
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 This is a collection of all the code written for the work package. DragCalc is where the bulk of the calculations relating to torque and momentum in flight have been performed, 
 as well as where the graph of torque output as a function of altitude was made. 
-
-MMOI \todo andres or diogo describe the MMOI .py file
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+For 'calculations mmoi.py', the program first defines the variables to be used, such as the initial volume of fuel (vbegin), density of fuel (rho), total thrust (thrust), exhaust velocity (vexhaust),
+burn time (tburn), amount of steps (steps), radius of the fuel tank (R), mass of the fuel tank (mtank), mass of the spacecraft without propellants and tank (mbig) and initial MMOI of the spacecraft with the
+full tank (Isc_roll_initial). Additionally the mass flow (mdot), dry mass (mdry), and wet mass (mwet) are calculated, and will be used in the following calculations. All of the aforementioned values are included
+in the code in SI units.
+Aditionally, the code lists several functions, which perform calculations regarding: conversion of deltaV to burn time (Dvtoburntime), spacecraft roll mass moment of inertia calculation as a function of fuel height 
+(Isc_Roll), spacecraft tank mass moment of inertia as a function of fuel height (Iroll), height of the fuel in the tank as a function of fuel volume (h), volume of fuel in the spacecraft tank as a function of time (Vol), 
+calculation of spacecraft roll mass moment of inertia as a function of time (FunnyFunc_com_Roll).
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Finally, phaseplot is where the plot for mission phases was made. 
