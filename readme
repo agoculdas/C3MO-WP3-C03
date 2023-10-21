@@ -9,6 +9,6 @@ full tank (Isc_roll_initial). Additionally the mass flow (mdot), dry mass (mdry)
 in the code in SI units.
 Aditionally, the code lists several functions, which perform calculations regarding: conversion of deltaV to burn time (Dvtoburntime), spacecraft roll mass moment of inertia calculation as a function of fuel height 
 (Isc_Roll), spacecraft tank mass moment of inertia as a function of fuel height (Iroll), height of the fuel in the tank as a function of fuel volume (h), volume of fuel in the spacecraft tank as a function of time (Vol), 
-calculation of spacecraft roll mass moment of inertia as a function of time (FunnyFunc_com_Roll).
+calculation of spacecraft roll mass moment of inertia as a function of time (FunnyFunc_Roll), calculation of the location of the spacecraft's center of mass location as a function of fuel height (com_roll) and time (FunnyFunc_com_Roll).
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Finally, phaseplot is where the plot for mission phases was made. 
