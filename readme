@@ -1,7 +1,13 @@
 Hello! Welcome to the github repository for WP3.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-This is a collection of all the code written for the work package. DragCalc is where the bulk of the calculations relating to torque and momentum in flight have been performed, 
-as well as where the graph of torque output as a function of altitude was made. 
+For 'DragCalc', the program first defines the variables to be used; most are fairly self-explanatory, for example cd is the coefficient of drag, Asp is the area of the solar panel, so on and so forth. 
+
+The function densitysm(x) uses the empirical formula derived from Mars climate database results to form a worst-case density function. The other functions until yawdrag(z) are experiments, alternate approaches, and incorrect methodology left in order to document the learning process. The complicated formula for density was a result of finding a model based on Viking data, but it was too optimistic and found density to be low compared to the worst times of the year by a factor of 3. drag(z) uses a simplified model to calculate drag as a function of height(z), where the counter torque on the other solar panel is zero. this was iterated past as new approaches were analyzed. Dragalt(z) uses the Viking density formula to find drag as a function of height(z). 
+
+Yawdrag(z) is the final iteration of the process: this calculates the yaw drag accounting for lift effects, and using the pessimistic scaled model for drag. 
+
+The various functions relating to arrays store the values of this function for the step width, and compare it with the solar pressure torque to find the crossover point where drag torque is less than solar torque. 
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 For 'calculations mmoi.py', the program first defines the variables to be used, such as the initial volume of fuel (vbegin), density of fuel (rho), total thrust (thrust), exhaust velocity (vexhaust),
 burn time (tburn), amount of steps (steps), radius of the fuel tank (R), mass of the fuel tank (mtank), mass of the spacecraft without propellants and tank (mbig) and initial MMOI of the spacecraft with the
